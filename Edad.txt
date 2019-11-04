@@ -1,0 +1,17 @@
+ int dif = DateTime.Now.Year - FechaNacimiento.Year;
+                int difM = DateTime.Now.Month - FechaNacimiento.Month;
+                int difD = DateTime.Now.Day - FechaNacimiento.Day;
+
+
+                if (difM < 0)
+                {
+                    dif--;
+                }
+                else if (difM == 0)
+                {
+                    if (difD < 0)
+                    {
+                        dif--;
+                    }
+                }
+                return dif;
